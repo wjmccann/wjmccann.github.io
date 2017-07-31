@@ -24,7 +24,7 @@ html {
 body {
 	background: $white;
   font: 18px/1.4 $ubuntu;
-  font-family: $ubuntu;
+  
 
   color: $darkGray;
 }
@@ -40,6 +40,7 @@ h1, h2, h3, h4, h5, h6 {
   
   color: $darkerGray;
   font-weight: bold;
+  font-family: $ubuntu;
 
   line-height: 1.7;
   margin: 1em 0 15px;
@@ -52,7 +53,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 30px;
-  
+  font-family: $ubuntu;
   a {
     color: inherit;
   }
@@ -61,23 +62,28 @@ h1 {
 
 h2 {
   font-size: 24px;
+  font-family: $ubuntu;
 }
 
 h3 {
   font-size: 20px;
+  font-family: $ubuntu;
 }
 
 h4 {
   font-size: 18px;
   color: $gray;
+  font-family: $ubuntu;
 }
 
 p {
   margin: 15px 0;
+  font-family: $ubuntu;
 }
 
 a {
   color: $blue;
+  font-family: $ubuntu;
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
