@@ -12,8 +12,11 @@
 // Syntax highlighting @import is at the bottom of this file
 
 $ubuntu: 'Ubuntu', sans-serif;
-
 $raleway: 'Raleway', sans-serif;
+
+$font-font-awesome: FontAwesome;
+$theme-color: $blue;
+$theme-color-dark: darken($theme-color, 10%);
 
 /**************/
 /* BASE RULES */
@@ -296,6 +299,28 @@ nav {
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
   background-color: $lightGray;
+}
+
+.post-tag {
+  display: inline-block;
+  background: rgba($theme-color, 0.15);
+  padding: 0 .5rem;
+  margin-right: .5rem;
+  border-radius: 4px;
+  color: $theme-color;
+  font-family: $font-sans;
+  font-size: 90%;
+  &:before {
+    content: "\f02b";
+    font-family: $font-font-awesome;
+    padding-right: .5em;
+  }
+  &:hover {
+    text-decoration: none;
+    background: $theme-color;
+    color: $white;
+  }
+  @include transition(all .1s ease-in-out);
 }
 
 footer {
