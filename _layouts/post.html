@@ -13,5 +13,9 @@ layout: default
     Written on {{ page.date | date: "%B %e, %Y" }}
   </div>
 
-  {% include disqus.html %}
+  {% for tag in page.tags %}
+
+    <a href="{{ site.baseurl }}{{ site.tag_page }}#{{ tag | slugify }}">{{ tag }}</a>
+
+  {% endfor %}
 </article>
