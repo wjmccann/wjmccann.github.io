@@ -8,7 +8,10 @@ layout: default
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
       <div class="date">
-        {{ [post.date | date: "%B %e, %Y"}} | Tags
+        {{ [post.date | date: "%B %e, %Y"}} | 
+        {% for tag in page.tags %}
+          <a href="{{ site.baseurl }}{{ site.tag_page }}#{{ tag | slugify }}">{{ tag }}</a>
+        {% endfor %}
       </div>
       <div class="entry">
         {{ post.excerpt }}
