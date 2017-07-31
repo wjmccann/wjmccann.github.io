@@ -21,7 +21,8 @@ html {
 
 body {
 	background: $white;
-  font: 18px/1.4 $helvetica;
+  //font: 18px/1.4 $helvetica;
+  font-family: 'Ubuntu', sans-serif;
   color: $darkGray;
 }
 
@@ -48,7 +49,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 30px;
-  font-family: 'Ubuntu', sans-serif;
+  
   a {
     color: inherit;
   }
