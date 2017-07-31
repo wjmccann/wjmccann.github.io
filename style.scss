@@ -7,8 +7,10 @@
 
 @import "reset";
 @import "variables";
-@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
 // Syntax highlighting @import is at the bottom of this file
+
+$ubuntu: 'Ubuntu', sans-serif;
 
 /**************/
 /* BASE RULES */
@@ -22,7 +24,7 @@ html {
 body {
 	background: $white;
   //font: 18px/1.4 $helvetica;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: $ubuntu;
   font-size: 18px/1.4;
   color: $darkGray;
 }
