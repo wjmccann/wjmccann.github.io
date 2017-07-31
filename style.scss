@@ -16,7 +16,7 @@
 
 html {
   font-size: 100%;
-	font-family: 'Ubuntu', sans-serif;
+	
 }
 
 body {
@@ -48,9 +48,11 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 30px;
+  font-family: 'Ubuntu', sans-serif;
   a {
     color: inherit;
   }
+	
 }
 
 h2 {
