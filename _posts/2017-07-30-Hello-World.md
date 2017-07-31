@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Hello World
+tags: [misc]
 ---
 
 Hello World! Well this is the beginning of my first adventure into the world of blogging. Yes, I am hosting via GitHub pages, it makes the most sense - its easy to manage, its easy to maintain, the price is right (well its free) and gives me all the flexibility i want. 
