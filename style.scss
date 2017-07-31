@@ -24,6 +24,7 @@ html {
 body {
 	background: $white;
   font: 18px/1.4 $ubuntu;
+  font-family: $ubuntu;
 
   color: $darkGray;
 }
@@ -191,7 +192,7 @@ img {
 nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
+  font-family: $ubuntu;
   font-size: 18px;
 
   @include mobile {
