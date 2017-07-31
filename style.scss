@@ -7,10 +7,11 @@
 
 @import "reset";
 @import "variables";
-@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Raleway|Ubuntu'');
 // Syntax highlighting @import is at the bottom of this file
 
 $ubuntu: 'Ubuntu', sans-serif;
+$raleway: 'Raleway', sans-serif;
 
 /**************/
 /* BASE RULES */
@@ -78,7 +79,7 @@ h4 {
 
 p {
   margin: 15px 0;
-  font-family: $ubuntu;
+  font-family: $raleway;
 }
 
 a {
