@@ -321,7 +321,6 @@ nav {
     background: $theme-color;
     color: $white;
   }
-  @include transition(all .1s ease-in-out);
 }
 
 footer {
