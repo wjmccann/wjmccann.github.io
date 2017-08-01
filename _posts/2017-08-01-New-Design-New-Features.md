@@ -93,7 +93,7 @@ link-tags: true
 
 and then modified the same bit of code on the index.html file and post.html layout file (located in _layouts) to point to my own tags.html page. All that is needed to be modified is the link component of the following code.
 
-~~~
+{% highlight ruby %}
 {% raw %}
 {% if post.tags.size > 0 %}
     <div class="blog-tags">
@@ -108,7 +108,7 @@ and then modified the same bit of code on the index.html file and post.html layo
     </div>
 {% endif %}
 {% endraw %}
-~~~
+{% endhighlight %}
 This will make your tags now work perfectly. Click a tag and you will be taken to a page to view all the other posts with the same tag. Perfect! 
 
 Cheers,
