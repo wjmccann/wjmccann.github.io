@@ -1,6 +1,6 @@
 ---
-layout: default
-title: Tag
+layout: page
+title: Tags
 ---
 
 {% comment %}
@@ -37,10 +37,11 @@ The following part removes dulpicated tags and invalid tags like blank tag.
 The purpose of this snippet is to list all the tags you have in your site.
 =======================
 {% endcomment %}
-<h1>Tags</h1>
+<div class="blog-tags">
 {% for tag in tags %}
 	<a href="#{{ tag | slugify }}" class="post-tag"> {{ tag }} </a>
 {% endfor %}
+</div>
 <hr/>
 
 
