@@ -93,7 +93,7 @@ link-tags: true
 
 and then modified the same bit of code on the index.html file and post.html layout file (located in _layouts) to point to my own tags.html page. All that is needed to be modified is the link component of the following code.
 
-{% highlight ruby linenos %}
+{% highlight %}
 {% if post.tags.size > 0 %}
     <div class="blog-tags">
       Tags:
