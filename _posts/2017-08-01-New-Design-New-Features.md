@@ -20,11 +20,11 @@ layout: page
 title: Tags
 ---
 
-	{% comment %}
+{% comment %}
 =======================
 The following part extracts all the tags from your posts and sort tags, so that you do not need to manually collect your tags to a place.
 =======================
-	{% endcomment %}
+{% endcomment %}
 	{% assign rawtags = "" %}
 	{% for post in site.posts %}
 	{% assign ttags = post.tags | join:'|' | append:'|' %}
@@ -32,11 +32,11 @@ The following part extracts all the tags from your posts and sort tags, so that 
 	{% endfor %}
 	{% assign rawtags = rawtags | split:'|' | sort %}
 
-	{% comment %}
+{% comment %}
 =======================
 The following part removes dulpicated tags and invalid tags like blank tag.
 =======================
-	{% endcomment %}
+{% endcomment %}
 	{% assign tags = "" %}
 	{% for tag in rawtags %}
 	{% if tag != "" %}
@@ -49,23 +49,23 @@ The following part removes dulpicated tags and invalid tags like blank tag.
 	{% endif %}
 	{% endfor %}
 
-	{% comment %}
+{% comment %}
 =======================
 The purpose of this snippet is to list all the tags you have in your site.
 =======================
-	{% endcomment %}
-	<div class="blog-tags">
+{% endcomment %}
+<div class="blog-tags">
 	{% for tag in tags %}
 	<a href="#{{ tag | slugify }}" class="post-tag"> {{ tag }} </a>
 	{% endfor %}
-	</div>
-	<hr/>
+</div>
+<hr/>
 
-	{% comment %}
+{% comment %}
 =======================
 The purpose of this snippet is to list all your posts posted with a certain tag.
 =======================
-	{% endcomment %}
+{% endcomment %}
 	{% for tag in tags %}
 	<h2 id="{{ tag | slugify }}">{{ tag }}</h2>
 	<ul>
