@@ -1,16 +1,22 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: I dabble in a bit of everything
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+I'm William McCann, a jack of all trades geek, a Computer Scientist and Cyber Security Student. I dabble in just about everything I can when it comes to IT, but my pain passion is Information and Cyber Security. 
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+Browse my Github and you will see I have programmed in:
 
-What else do you need?
+ - Android (I have three Apps on the Google Play store)
+ - Python (Including applications in Flask and Django)
+ - C# UWP
+ - Java
 
-### my history
+I run my own Homelab at home, mostly based in Linux and I am constantly expanding my knowledge by introducing new things to my network all the time. 
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+This blog is a space for me to document my learning and professional development. Hopefully you find something here that is enjoyable and informative.
+
+### Disclaimer
+
+Opinions expressed here are my own and do not reflect those of my employer. All views are my own.
