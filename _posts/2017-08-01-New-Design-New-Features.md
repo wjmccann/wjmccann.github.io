@@ -13,7 +13,7 @@ After a big of googling around I found a few sites, however a lot of them had ma
 ### Create Tag Page
 I created a tags.html page in a folder called blog/ in my root directory of the site. This page will collate all the tags used in each of my posts and then list the posts that correspond to those tags - basically a summary of tags and posts. (still confused? click on a tag and you will go to the page!). Inside tags.html I added the following code.
 
-~~~~
+```
 ---
 layout: page
 title: Tags
@@ -60,7 +60,6 @@ The purpose of this snippet is to list all the tags you have in your site.
 </div>
 <hr/>
 
-
 {% comment %}
 =======================
 The purpose of this snippet is to list all your posts posted with a certain tag.
@@ -83,7 +82,7 @@ The purpose of this snippet is to list all your posts posted with a certain tag.
 	 {% endfor %}
 	</ul>
 {% endfor %}
-~~~~
+```
 The comments in the code should really explain how this all works. 
 
 From here, I went to my Beautiful Jekyll _config.yml file and set link-tags to true
