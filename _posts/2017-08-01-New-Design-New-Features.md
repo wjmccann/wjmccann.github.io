@@ -108,6 +108,7 @@ and then modified the same bit of code on the index.html file and post.html layo
     </div>
 {% endif %}
 {% endraw %}
+~~~
 This will make your tags now work perfectly. Click a tag and you will be taken to a page to view all the other posts with the same tag. Perfect! 
 
 Cheers,
