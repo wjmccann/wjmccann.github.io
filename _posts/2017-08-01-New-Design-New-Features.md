@@ -92,7 +92,7 @@ From here, I went to my Beautiful Jekyll _config.yml file and set link-tags to t
 link-tags: true
 ~~~~
 
-and then modified the same bit of code on the index.html file and post.html layout file (located in _layouts) to point to my own tags.html page. All that is needed to be modified is the <a href></a> component of the following code.
+and then modified the same bit of code on the index.html file and post.html layout file (located in _layouts) to point to my own tags.html page. All that is needed to be modified is the link component of the following code.
 
 ~~~~
 {% if post.tags.size > 0 %}
