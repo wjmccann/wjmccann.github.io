@@ -7,7 +7,7 @@ This morning I read [this article](https://www.linkedin.com/pulse/so-how-do-you-
 
 Earlier this year I watched Hak5's AUSCERT2017 Keynote presentation titled - 'Of Hardware and Humans: Exploiting the Unviersal Attack Vector'. If you haven't seen the keynote it is worth checking out here [![Hak5 Keynote AUSCERT 2017](http://img.youtube.com/vi/m-hhNJLVLEE/0.jpg)](http://www.youtube.com/watch?v=m-hhNJLVLEE). Now, I could go on to detail a whole raft of other research in this area, but I will quickly summarise some of the results here:
 
-# Hak5 USB Drop - RSA Conference 2016
+### Hak5 USB Drop - RSA Conference 2016
  - 100 USB Drives used
  - 162 executions of code on the drive
  - 62 unique IP addresses
