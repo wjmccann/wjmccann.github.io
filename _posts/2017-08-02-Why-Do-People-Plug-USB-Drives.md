@@ -21,7 +21,7 @@ Now, I could go on to detail a whole raft of other research in this area, but I 
  - 48% success rate
  - [Link to article](https://www.theregister.co.uk/2016/04/11/half_plug_in_found_drives/)
  
-### [Department of Homeland Security - 2011]
+### Department of Homeland Security - 2011
  - 60% success rate
  - 90% success rate if USB had an offical logo
  - [Link to article](https://www.forbes.com/sites/ygrauer/2015/10/30/usb-drive-malware-security-homeland-security-cybersecurity)
@@ -31,7 +31,8 @@ Now, I could go on to detail a whole raft of other research in this area, but I 
  - 38 executions across 21 USB Drives
  
 Now, one thing that I have seen here is that people are actually getting smarter when it comes to plugging in USB drives that they have just found laying on the ground. Although the Hak5 exercise is slightly concerning considering it was at a information security conference that this occured at. But the question still remains why do people still plug in drives?
- # The Human Factor
+ 
+# The Human Factor
  
  [This article](https://www.theregister.co.uk/2016/04/11/half_plug_in_found_drives/) provides some understanding as to why, and so does Hak5's keynote. That is trust and human nature. A USB drive found at a University is most likely going to belong to a student, it may contain their latest assignment or research and we would hate for them to lose that. So the only way to return a lost USB to someone is to plug it in and look at the files as it may afford us some clues. It's really no different than someone plugging in a SD CARD from a camera to view the photos in order to identify someone who has lost a camera (perhaps this is a new attack vector - the lost camera with a bad SD Card, albeit a more expensive one compared to the cheap USB). 
  
