@@ -5,7 +5,8 @@ tags: [Social Engineering, Security]
 ---
 This morning I read [this article](https://www.linkedin.com/pulse/so-how-do-you-build-out-100-usbs-drop-edward-farrell) by Edward Farrell on the USB drop exercise Mercury ISS conducted recently betweeen Canberra and Sydney. It got me thinking on the number of people that actually plug in devices they find. Now, Edward's USB Drop is not the first, nor will it be the last of this kind of research activity. 
 
-Earlier this year I watched Hak5's AUSCERT2017 Keynote presentation titled - 'Of Hardware and Humans: Exploiting the Unviersal Attack Vector'. If you haven't seen the keynote it is worth checking out here [![Hak5 Keynote AUSCERT 2017](http://img.youtube.com/vi/m-hhNJLVLEE/0.jpg)](http://www.youtube.com/watch?v=m-hhNJLVLEE). Now, I could go on to detail a whole raft of other research in this area, but I will quickly summarise some of the results here:
+Earlier this year I watched Hak5's AUSCERT2017 Keynote presentation titled - 'Of Hardware and Humans: Exploiting the Unviersal Attack Vector'. If you haven't seen the keynote it is worth checking out here [![Hak5 Keynote AUSCERT 2017](http://img.youtube.com/vi/m-hhNJLVLEE/0.jpg)](http://www.youtube.com/watch?v=m-hhNJLVLEE). 
+Now, I could go on to detail a whole raft of other research in this area, but I will quickly summarise some of the results here:
 
 ### Hak5 USB Drop - RSA Conference 2016
 
