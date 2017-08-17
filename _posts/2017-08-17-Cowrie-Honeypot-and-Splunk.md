@@ -85,7 +85,7 @@ ssh-keygen -t dsa -b 1024 -f ssh_host_dsa_key
 cd ..
 ~~~~
 
-#### Setting up SSH
+### Setting up SSH
 Cowrie is a SSH honeypot, however it runs on port 2222 leaving port 22 to allow us to ssh normally into our VPS. ideally, we want would be attackers accessing port 22 thinking this is a real system so we need to move SSH over to a different port and port forward all traffic going to port 22 to port 2222.
 
 First we will configure SSH for ourselves.
@@ -126,7 +126,7 @@ Now we are ready to start cowrie. From within /home/cowrie/cowrie/ simply run th
 bin/cowrie start
 ~~~~
 
-#### Getting Logs with Splunk
+### Getting Logs with Splunk
 
 I decided I would create a second Digital Ocean Droplet and run Splunk to process the logs captured by my Cowrie Honeypot. To download the free version of Splunk, you need to sign up for a Splunk account and go to their downloads page. For my Ubuntu Digital Ocean VPS I simply ran the following command to download the latest version of Splunk.
 
