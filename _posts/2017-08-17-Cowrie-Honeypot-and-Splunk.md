@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cowrie Honeypot and Splunk Anaylsis
+title: Cowrie Honeypot and Splunk Analysis
 tags: [Security, Honeypot]
 ---
 
