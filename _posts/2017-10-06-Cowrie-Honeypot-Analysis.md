@@ -6,10 +6,10 @@ tags: [Security, Honeypot]
 During the period 16th of August 2017 to 6th of September 2017 a honeypot was deployed utilising the open source honeypot software Cowrie. Cowrie is a medium interaction SSH and Telnet honeypot designed to log brute force attacks and the shell interaction performed by the attacker. The honeypot was deployed on a Digital Ocean virtual private server (VPS) located in San Francisco, US. The honeypot was deployed as a research honeypot for the purpose of gaining threat intelligence on attackers as they interacted with the honeypot. 
 The honeypot was deployed with a Splunk universal forwarder which sent the data recorded by the honeypot to a Splunk Enterprise instance, also deployed via Digital Ocean. The app ‘Tango Honeypot Intelligence’ was used to interpret Cowrie logs and provide actionable Cyber Threat Intelligence (CTI) and statistics. Overall the honeypot was successful receiving multiple connections and scans a day, whilst providing useful threat information and malware specimens to be analysed. This Intelligence report will discuss the results of the honeypot exercise and provide analysis on attacker interactions with the honeypot.
 
-###Connections
+### Connections
 Over the 22 days that the honey pot was active, there were a total of 1754 different IP addresses interacted with the honeypot in the form of either successful or unsuccessful connections. There were 16,527 login attempts throughout the life of the honeypot with 2074 successful attempts and 14,453 failed attempts. This equates to approximately 80 different IP addresses connecting the honeypot per day, with 751 attempted logins a day. It is noted that the days of high activity occurred on a Friday, Saturday or Sunday meaning that attackers were active over Weekend periods. The day of lowest activity, aside from the day the honeypot was launched was a Monday. 
 
-###Username and Passwords
+### Username and Passwords
 The following table details the top 10 usernames attempted by attackers 
 
 Username | Count
