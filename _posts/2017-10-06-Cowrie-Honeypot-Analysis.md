@@ -30,7 +30,7 @@ The following table details the top 10 passwords attempted by attackers:
 
 Password |	Count
 ------------ | ------------
- 	| 754
+' ' | 754
 password |	735
 123456 |	730
 admin |	610
