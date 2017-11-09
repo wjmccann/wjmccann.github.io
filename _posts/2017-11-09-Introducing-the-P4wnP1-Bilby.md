@@ -17,7 +17,13 @@ As it is, the P4wnP1 connects to a computer using the Raspberry Pi Zero's data m
 
 I first set about adding a male USB adapter to allow me to plug the Raspberry Pi directly to my computer with the need for a cable. I had an old 1GB USB Drive laying around which no longer worked, So i desoldered the head off the drive and soldered it to the connection points on the underside of the Raspberry Pi. 
 
-The next thing I needed to do was add a switch. My options were really limited to what is available at [Jaycar](https://www.jaycar.com.au/). My options were further limited to my desire to keep the switch as low profile as possible so that the device was not too bulky. I finally decided on a 3-way DIP switch. This provided me with the added benefit of having up to 8 payloads. I soldered the switch to the GPIO pins on the Raspberry Pi and then knocked up the following script in python to read their values in. 
+![Male USB Head Attached](/img/20171106_211333.jpg)
+
+The next thing I needed to do was add a switch. My options were really limited to what is available at [Jaycar](https://www.jaycar.com.au/). My options were further limited to my desire to keep the switch as low profile as possible so that the device was not too bulky. I finally decided on a 3-way DIP switch. This provided me with the added benefit of having up to 8 payloads.
+
+![Switch Attached 1](/img/20171106_224549.jpg) ![Switch Attached 2](/img/20171106_224540.jpg)
+
+I soldered the switch to the GPIO pins on the Raspberry Pi and then knocked up the following script in python to read their values in. 
 
 {% highlight python %}
 #!/usr/bin/env python
@@ -79,6 +85,8 @@ The first thing when looking at a comparison of the Bash Bunny and P4wnP1 is the
 | Available payloads                                                              | Fast growing github repo (big community)                                                                |  Slowly growing github repo (spare time one man show ;-)) Edit: Growing community, but no payload contributions so far                                                                                                                                                                                                                                                                                                                                                                            |
 | In one sentence ...                                                             | "World's most advanced USB attack platform."                                                            | A open source project for the pentesting and red teaming community.                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | Total Costs of Ownership                                                        | $99USD                                                                                            | $20AUD for Raspberry Pi Zero W, USB A Connector (Free), $1.25 for 3-Way DIP Switch, $4 for Raspberry Pi Zero case.                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+
+![Final 1](/img/20171108_110832.jpg) ![Final 2](/img/20171108_110826.jpg)
 
 ## The Name
 Your probably wondering, why I have called my variant the P4wnP1-Bilby. Well the Bilby is an Australian Marsupial with large ears, a tail and it hops. When you describe a Bilby to someone who has never seen one, the description sounds very much like a Bunny. However when you see the two together it is quite obvious that they are different. I think it describes my project quite well. 
