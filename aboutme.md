@@ -4,7 +4,7 @@ title: About me
 subtitle: I dabble in a bit of everything
 ---
 
-I'm William McCann, a jack of all trades geek, a Computer Scientist and Cyber Security Student. I dabble in just about everything I can when it comes to IT, but my pain passion is Information and Cyber Security. 
+I'm William McCann, a jack of all trades geek, a Computer Scientist and Cyber Security Enthusiast. I dabble in just about everything I can when it comes to IT, but my main passion is Information and Cyber Security. 
 
 Browse my Github and you will see I have programmed in:
 
