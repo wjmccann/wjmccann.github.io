@@ -17,7 +17,7 @@ As it is, the P4wnP1 connects to a computer using the Raspberry Pi Zero's data m
 
 I first set about adding a male USB adapter to allow me to plug the Raspberry Pi directly to my computer with the need for a cable. I had an old 1GB USB Drive laying around which no longer worked, So i desoldered the head off the drive and soldered it to the connection points on the underside of the Raspberry Pi. 
 
-![Male USB Head Attached](/img/20171106_211333.jpg)
+![Raspberry Pi Zero USB Connectors](/img/usbzerodiagram.jpg) ![Male USB Head Attached](/img/20171106_211333.jpg)
 
 The next thing I needed to do was add a switch. My options were really limited to what is available at [Jaycar](https://www.jaycar.com.au/). My options were further limited to my desire to keep the switch as low profile as possible so that the device was not too bulky. I finally decided on a 3-way DIP switch. This provided me with the added benefit of having up to 8 payloads.
 
