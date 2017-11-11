@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Scary World of Baby Monitor 'Hacking'
-tags: [Security, Hacking]
+tags: [Security, IOT]
 ---
 About two months ago, there were a number of news stories floating around about people hacking into Baby Monitors. The news stories detailed two occurances where Mothers had heard a strange voice talking to them through the monitor or the monitor moving on its own following people around the room. For those with children this is a scary occurance and a genuine concern for anyone using a baby monitor
 
