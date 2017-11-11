@@ -18,7 +18,7 @@ So the Camera arrived and the first thing that I noticed that concerned me was t
 
 So I opened it up, connected it to my network and downloaded the App from the Google Play Store. Again, alarm bells were raised when I saw the 'Whats New' section of the App, it looks as if somewhat had hacked the page with Jibberish. Upon immediately connecting the camera up and getting it activated with the App, the device was attempting to connect to the Internet. Luckily, the firewall rules on my network prevented any remote access. 
 
-<img src=/img/Baby%20Monitor/Appscreenshot.png width=100, heigh=200)
+<img src=/img/Baby%20Monitor/Appscreenshot.png width=100, heigh=200 />
 
 ## Network Scans
 I first ran a nmap scan against the device and discovered that port 80, 554, 1935 and 8080. Upon further research I discovered the following: 
