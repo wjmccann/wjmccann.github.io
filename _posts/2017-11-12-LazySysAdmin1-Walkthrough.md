@@ -1,7 +1,7 @@
 ---
 layout: post
-title: The Scary World of Baby Monitor 'Hacking'
-tags: [Security, IOT]
+title: Vulnhub - LazySysAdmin 1 Walkthrough
+tags: [Hacking, Vulnhub, CTF]
 ---
 LazySysAdmin 1 is a Boot to Root CTF available [here](https://www.vulnhub.com/entry/lazysysadmin-1,205/) on Vulnhub. It's difficulty is rated as Beginner/Intermediate.
 
