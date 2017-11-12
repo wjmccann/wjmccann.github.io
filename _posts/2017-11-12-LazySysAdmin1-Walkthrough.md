@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Vulnhub: LazySysAdmin 1 Walkthrough
+title: Vulnhub - LazySysAdmin 1 Walkthrough
 tags: [Hacking, Vulnhub, CTF]
 ---
 
