@@ -18,7 +18,7 @@ So the Camera arrived and the first thing that I noticed that concerned me was t
 
 So I opened it up, connected it to my network and downloaded the App from the Google Play Store. Again, alarm bells were raised when I saw the 'Whats New' section of the App, it looks as if it had been compromised with the page displaying Jibberish. Upon immediately connecting the camera up and getting it activated with the App, the device was attempting to connect to the Internet. Luckily, the firewall rules on my network prevented any remote access. There doesn't appear to be any features available in the App to prevent it from connecting to the internet and isolating it from my home network.
 
-<img src=/img/Baby%20Monitor/Appscreenshot.png width=300, heigh=600 />
+![App Screenshot](/img/Baby%20Monitor/Appscreenshot.png)
 
 ## Network Scans
 I first ran a nmap scan against the device and discovered that port 80, 554, 1935 and 8080. Upon further research I discovered the following: 
@@ -41,11 +41,11 @@ I decided to run a dirb and nikto scan against the web server on Port 80. Nikto 
 
 Now, that I had some credentials I visited the web page and was greated with a page that defaulted to Chinese. There was a javascript link that allowed me to change it to English and I logged in with admin/admin. From here I was able  to view the camera and control its movement. As admin I was able to set alarms and alerts change how images and video were saved (i.e direct that periodic images be sent to my own FTP server). Also as Admin I was able to access the /sd folder which is mapped to a mounted micro SD Card which can be inserted and view the contents of all images and video that were saved to the SD Card. I was also able to view all users that had access to the web port. The users consisted of Admin/Admin, User/User and Guest/Guest (already obtained by nikto). I logged out and tested each of these accounts to see what I could access. As both User and Guest, I could view the camera and move it as I wished. I did not have any access to the system settings or SD card. 
 
-![Web Login Page](/img/Baby%20Monitor/weblogin.png) <img src=/img/Baby%20Monitor/webcontrols.PNG width=200, heigh=400 />
+![Web Login Page](/img/Baby%20Monitor/weblogin.png) ![Web Port controls](/img/Baby%20Monitor/webcontrols.PNG)
 
 Now this is using default credentials, and the instructions provided with the device do say that for security purposes I should change the default password. So I went to the App and discovered that I can only change the Admin password. If I was a general consumer, I would never know that these additional accounts existed, let alone be able to change their default credentials. 
 
-<img src=/img/Baby%20Monitor/Passowrdscreenshot.png width=300, heigh=600 />
+![Password changing](/img/Baby%20Monitor/Passowrdscreenshot.png)
 
 ## Port 554
 I decided to explore the port 554 a little further and discovered that you can access network streams of  the RTSP service via VLC player. So I connected my VLC player to rtsp://[IP Address]/1 (the 1 indicating the first stream) and straight away I had access to the camera feed with no requirement to enter any credentials.
