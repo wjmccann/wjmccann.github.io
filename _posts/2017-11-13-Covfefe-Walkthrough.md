@@ -47,9 +47,11 @@ Having browsed the .bash_history file I downloaded I noted that the only command
 
 Reviewing the source code for the program I note that the program takes in a buffer of 20, but only reads the first 5 characters. I am now thinking buffer overflow as a way to exploit this. If the first 5 characters are 'Simon' the program will call execve and run another program which is the message.
 
-I confirm the SUID of the program read_message and identify that it is run by root. So I need to overwrite the program at /usr/local/sbin/message which my own shellcode or identify if there is a buffer overflow. I first attempt to replace the message program at /usr/local/sbin/message but I do not have the permissions.
+I confirm the SUID of the program read_message and identify that it is run by root.
 
 ![](/img/covfefe/suid.png)
+
+So I need to overwrite the program at /usr/local/sbin/message which my own shellcode or identify if there is a buffer overflow. I first attempt to replace the message program at /usr/local/sbin/message but I do not have the permissions.
 
 I download the source code to my own machine, compile it as a 32-bit ELF binary and run it through GDB. I set a breakpoint at 'execve' and run the program as normal. At the breakpoint I see that EAX is the value of the program that is going to be run by execve. 
 
