@@ -17,8 +17,7 @@ I run dirb against port 80 and find nothing, but on port 31337 I find some inter
 
 ![](/img/covfefe/dirb.png)
 
-Browsing to http://[IP Address]:31337/taxes, I find the first flag. I then download each of the files in the directory and extract the private key from the .ssh file.
-
+I view the robots.txt and see that it refers to a http://[IP Address]:31337/taxes, I browse to this location and find the first flag. I then download each of the files in the directory and extract the private key from the .ssh file.
 
 ![](/img/covfefe/flag1.png)
 ![](/img/covfefe/downloadkey.png)
