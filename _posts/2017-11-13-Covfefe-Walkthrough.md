@@ -67,7 +67,7 @@ I set up a netcat listener to catch the shell
 
 ![](/img/covfefe/netcat.png)
 
-I make the program executable with 'chmod +x shell' and then run the program entering the values 'SimonAAAAAAAAAAAAAAA/tmp/shell', however I only get a shell as the user Simon. After a bit more research I discover that although read_message is being run as root, when the program executes the shellcode it is run as user simon. To get around this, I need to add [code] setuid(0) [/code] to my C program.
+I make the program executable with 'chmod +x shell' and then run the program entering the values 'SimonAAAAAAAAAAAAAAA/tmp/shell', however I only get a shell as the user Simon. After a bit more research I discover that although read_message is being run as root, when the program executes the shellcode it is run as user simon. To get around this, I need to add setuid(0) to my C program.
 
 I recompile and download the binary to the target machine and run the commands again.
 
