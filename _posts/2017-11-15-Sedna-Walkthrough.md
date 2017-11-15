@@ -40,7 +40,7 @@ I find the first flag located at /var/www/
 
 I copy across the [LinEnum]() script that I use to automate Linux enumeration and run it. I take note of the Kernel version (3.13.0) and look to see if there are any privilege escalation vulnerabilities. 
 
-![](/img/Sedna/kernel.png
+![](/img/Sedna/kernel.png)
 
 Through my research I identify the Dirty Cow exploit as being a potential candidate. Details of the Dirty Cow exploit can be [found here](https://dirtycow.ninja/), however it is basically a kernel exploit that can allow an unprivileged user to write to privileged files (Copy Over Write - C.O.W) and in the case of the exploit I used, it overwrites the /etc/passwd to add in a new user. The exploit I used was found [here](https://www.exploit-db.com/exploits/40839/). I compile the exploit as per the instructions and execute it (yes, I left the default user in the exploit, because I had a sensible chuckle at the username FireFarts).
 
