@@ -17,6 +17,8 @@ I run my own Homelab at home, mostly based in Linux and I am constantly expandin
 
 This blog is a space for me to document my learning and professional development. Hopefully you find something here that is enjoyable and informative.
 
+If you would like to get in contact with me, my Twitter and email address are below. My [PGP public key](https://keybase.io/wjmccann) can be used to send me anything that may be sensitive.
+
 ### Disclaimer
 
 Opinions expressed here are my own and do not reflect those of my employer. All views are my own.
