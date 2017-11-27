@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cyberspace Operations Learing Resources
+title: Cyberspace Operations Learning Resources
 tags: [Cyber, Training]
 ---
 I recently undertook a 50 day profressional training package designed to train students in Cyberspace Operations. The course was deviced into three modules - a Blue Module, a Red Module and a Combined (Red vs Blue) Module. The course was excellent and presented a wide range of topics within Cyber Security. Throughout the course I looked up additional resources to further my learning and I have decided to compile them on my Github. These learning resources are useful for students who are looking to undertake the course as a form of pre-reading (you are not expected to know everything prior to the course! but a brief overview of the topics will allow you to excel and get more out of it). These learning resources are also useful for students who have completed the course and wish to continue their learning in certain topics and expand the knowledge gained from the course. 
