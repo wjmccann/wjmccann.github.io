@@ -67,7 +67,12 @@ This method will work well if you only have to have the one Kali container open.
 docker commit a8c6b00c02ca kali
 {% endhighlight %}
 
-This will create a new image 'kali' from our container. 
+This will create a new image 'kali' from our container. We can view the images we have in Docker by running the following command:
+{% highlight bash %}
+docker images
+{% endhighlight %}
+![](/img/kali-docker/images.PNG)
+
 
 From here, we can now remove our container using the commands:
 {% highlight bash %}
