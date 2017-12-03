@@ -50,7 +50,7 @@ Now you can exit your container by simplying type 'exit'. To view your active co
 {% highlight bash %}
 docker ps -a
 {% endhighlight %}
-![](/img/kali-docker/docker-ps.png)
+![](/img/kali-docker/docker-ps.PNG)
 Now, we can re-enter our container by typing: 
 {% highlight bash %}
 docker start a8c6b00c02ca
