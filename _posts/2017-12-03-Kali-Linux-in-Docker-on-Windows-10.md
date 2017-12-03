@@ -89,7 +89,7 @@ The option '--rm' means that our kali container will be removed as soon as we ex
 From here I can spin up as many containers as I need to get my work done. 
 
 ## Connecting to ports
-Using tools such as netcat and metasploit where I have listeners set up and watching to catch a shell, I need to enable that port via my docker image. Therfore, if I know I am going to be using a port in my docker instance I need to enable it when I run docker. i.e.
+Using tools such as netcat and metasploit where I have listeners set up and waiting to catch a shell, I need to enable that port via my docker image. Therfore, if I know I am going to be using a port in my docker instance I need to enable it when I run docker. i.e.
 {% highlight bash %}
 docker run -it --rm -p 4444:4444 kali
 {% endhighlight %}
