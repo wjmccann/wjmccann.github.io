@@ -9,11 +9,11 @@ Recently I have found Docker as a way to containerise a Kali instance. Spinning 
 
 ## Installing Docker for Windows.
 On Windows 10 (Anniversary Edition), you will firstly need to enable the use of containers. Using, Win + r, enter 'optionalfeatures' to access the 'Turn Windows Features on or off' prompt. 
-![](/img/kali-docker/optionalfeatures.png)
+![](/img/kali-docker/optionalfeatures.PNG)
 Tick the box next to Containers and then click 'Ok'.
-![](/img/kali-docker/features.png)
+![](/img/kali-docker/features.PNG)
 Browse to [Dockers home page](https://www.docker.com/) and download the Docker for Windows Community Edition.
-![](/img/kali-docker/docker.png)
+![](/img/kali-docker/docker.PNG)
 After Downloading, follow the bouncing ball to install Docker. It will see you need to log out of your account and back in, and you will need to make sure you are an administrator to make sure the installation goes smoothly.
 
 ## Running Docker
@@ -31,7 +31,7 @@ docker run -it kalilinux/kali-linux-docker
 The '-it' option allows you to open an interactive session with the container. 
 
 You will now be presented with the command prompt of your Kali instance.
-![](/img/kali-docker/kali-prompt.png)
+![](/img/kali-docker/kali-prompt.PNG)
 
 ## Installing Tools
 The kali instance you download has no tools installed at all. This allows you to full customise the Kali instance to contain as many tools as you want/need. The first thing to do, is to update the repositories, upgrade whats there and remove what we dont need: 
