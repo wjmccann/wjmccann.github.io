@@ -41,3 +41,26 @@ Finally, install the libssl-dev library
 {% highlight c %}
 apt-get install libssl1.0-dev
 {% endhighlight %}
+
+Now I can compile the exploit using:
+{% highlight bash %}
+gcc -o OpenFuck 764.c -lcrypto
+{% endhighlight %}
+
+Running the exploit with no arguments presents the options for the exploit. It requires me to enter the code for the correct operating system and apache version number. From our Nikto scan we know that apache version 1.3.20 is the apache version and that the system is running Red Hat Linux. Looking at the options for the exploit we have two options. The following allowed the exploit to work.
+
+{% highlight bash %}
+./OpenFuck 0x6b 192.168.5.130 443 -c 40
+{% endhighlight %}
+
+The exploit runs successfully and I can see that I have root access via basic shell. 
+![](/img/kioptrix1-1/access.png)
+
+I tried to upgrade my shell by using:
+{% highlight bash %}
+echo os.system('/bin/bash')
+{% endhighlight %}
+
+However, this upgrades my shell as the apache user, so I run the exploit again and keep my root shell. As root I can view the /etc/shadow file and see there are other users, however there is nothing of interest in any of the home directories. Some further snooping, I finally find a email in /var/spool/mail/ and find the 'flag'.
+
+![](/img/kioptrix1-1/flag.png)
