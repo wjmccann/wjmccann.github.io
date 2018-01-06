@@ -55,4 +55,4 @@ python -c 'import pty; pty.spawn("/bin/sh")'
 
 ![](/img/kioptrix1-2/root.png)
 
-The exploit runs and I confirm that I am root. I hunt around again in the mail folders, but there doesn't seem to be an hidden message in this VM - getting root is enough!
+The exploit runs and I confirm that I am root. I hunt around again in the mail folders, but there doesn't seem to be any hidden message in this VM - getting root is enough!
