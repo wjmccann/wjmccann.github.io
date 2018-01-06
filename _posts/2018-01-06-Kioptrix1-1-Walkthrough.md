@@ -17,18 +17,18 @@ Visiting the websites on port 80 and 443 reveal just the default apache page. So
 
 Nikto reveals something interesting - mod_ssl 2.8.4 - mod_ssl 2.8.7 and lower are vulnerable to a remote buffer overflow which may allow a reverse shell (OSVDB-756). I give this a google and come across the [OpenFuckV2 exploit](http://www.exploit-db.com/exploits/764/) on ExploitDB. I download the exploit and attempt to compile, however I recieve a number of errors. I decide to again google to see if I can find any clues on compiling this exploit and I come across this [Blog Post](http://paulsec.github.io/blog/2014/04/14/updating-openfuck-exploit/) and this [Reddit Post](https://www.reddit.com/r/HowToHack/comments/5q2rkp/help_compiling_a_c_exploit/). Combining the information from these two sources the process to get the exploit to work is as follows:
 
-# Add the following headers
+#### Add the following headers
 {% highlight c %}
-# include <openssl/rc4.h>
-# include <openssl/md5.h>
+#### include <openssl/rc4.h>
+#### include <openssl/md5.h>
 {% endhighlight %}
 
-# Update the wget URL (found via searching for wget) to:
+#### Update the wget URL (found via searching for wget) to:
 {% highlight c %}
 http://dl.packetstormsecurity.net/0304-exploits/ptrace-kmod.c
 {% endhighlight %}
 
-# Update variable on line 961 from 
+#### Update variable on line 961 from 
 {% highlight c %}
 unsigned char *p, *end;
 {% endhighlight %}
@@ -37,7 +37,7 @@ to this:
 const unsigned char *p, *end;
 {% endhighlight %}
 
-# Finally, install the libssl-dev library
+#### Finally, install the libssl-dev library
 {% highlight c %}
 apt-get install libssl1.0-dev
 {% endhighlight %}
