@@ -3,7 +3,7 @@ layout: post
 title: Vulnhub - Kioptrix 1.1 Walkthrough
 tags: [Hacking, Vulnhub, CTF]
 ---
-Kioptrix 1.1 is a Boot to Root CTF available [here](https://www.vulnhub.com/entry/kioptrix-level-1-1,22/) on Vulnhub. It's difficulty is rated as Beginner. This write up is the first of a series I will be doing as I complete Abatchy's list of OSCP like Vulnhub VM's. 
+Kioptrix 1.1 is a Boot to Root CTF available [here](https://www.vulnhub.com/entry/kioptrix-level-1-1,22/) on Vulnhub. It's difficulty is rated as Beginner. This write up is the first of a series I will be doing as I complete [Abatchy's list of OSCP like Vulnhub VM's](http://www.abatchy.com/2017/02/oscp-like-vulnhub-vms). 
 
 The VM and my Kali instance are set up with NAT networking, so to discover the IP address of the VM I run netdiscover
 
