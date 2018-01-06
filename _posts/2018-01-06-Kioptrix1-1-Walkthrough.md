@@ -9,7 +9,7 @@ The VM and my Kali instance are set up with NAT networking, so to discover the I
 
 ![](/img/kioptrix1-1/netdiscover.png)
 
-Once I obtain the IP, then run a nmap scan and find the following ports: 22, 80, 111, 139, 443 and 1024. 
+Once I obtain the IP, I then run a nmap scan and find the following ports: 22, 80, 111, 139, 443 and 1024. 
 ![](/img/kioptrix1-1/nmap.png)
 
 Visiting the websites on port 80 and 443 reveal just the default apache page. So I decide to run nikto to see if anything can be found.
