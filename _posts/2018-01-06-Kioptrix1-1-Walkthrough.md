@@ -23,10 +23,12 @@ Nikto reveals something interesting - mod_ssl 2.8.4 - mod_ssl 2.8.7 and lower ar
 # include <openssl/md5.h>
 {% endhighlight %}
 
+
 #### Update the wget URL (found via searching for wget) to:
 {% highlight c %}
 http://dl.packetstormsecurity.net/0304-exploits/ptrace-kmod.c
 {% endhighlight %}
+
 
 #### Update variable on line 961 from 
 {% highlight c %}
@@ -36,6 +38,7 @@ to this:
 {% highlight c %}
 const unsigned char *p, *end;
 {% endhighlight %}
+
 
 #### Finally, install the libssl-dev library
 {% highlight c %}
@@ -61,6 +64,6 @@ I tried to upgrade my shell by using:
 echo os.system('/bin/bash')
 {% endhighlight %}
 
-However, this upgrades my shell as the apache user, so I run the exploit again and keep my root shell. As root I can view the /etc/shadow file and see there are other users, however there is nothing of interest in any of the home directories. Some further snooping, I finally find a email in /var/spool/mail/ and find the 'flag'.
+However, this upgrades my shell as the apache user, so I run the exploit again and kept my root shell. As root I can view the /etc/shadow file and see there are other users, however there is nothing of interest in any of the home directories. Some further snooping, I finally find a email in /var/spool/mail/ and find the 'flag'.
 
 ![](/img/kioptrix1-1/flag.png)
