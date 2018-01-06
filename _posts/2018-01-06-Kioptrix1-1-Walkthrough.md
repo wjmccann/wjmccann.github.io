@@ -19,8 +19,8 @@ Nikto reveals something interesting - mod_ssl 2.8.4 - mod_ssl 2.8.7 and lower ar
 
 #### Add the following headers
 {% highlight c %}
-#### include <openssl/rc4.h>
-#### include <openssl/md5.h>
+# include <openssl/rc4.h>
+# include <openssl/md5.h>
 {% endhighlight %}
 
 #### Update the wget URL (found via searching for wget) to:
