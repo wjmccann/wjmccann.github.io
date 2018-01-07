@@ -3,6 +3,7 @@ layout: post
 title: Vulnhub - Stapler: 1 Walkthrough
 tags: [Hacking, Vulnhub, CTF]
 ---
+
 Stapler:1 is a Boot to Root CTF available [here](https://www.vulnhub.com/entry/stapler-1,150/) on Vulnhub. It's difficulty is rated as Beginner/Intermediate. This VM is the fifth in my OSCP preparation series based off [abatchy's blog post](http://www.abatchy.com/2017/02/oscp-like-vulnhub-vms.html).  
 
 The VM and my Kali instance are set up with NAT networking, so to discover the IP address of the VM I run netdiscover
