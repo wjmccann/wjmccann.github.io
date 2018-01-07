@@ -36,7 +36,7 @@ I visit the site and there is nothing revealed other than 'a web site is coming 
 I run nikto against the web server and find that there are three subdirectories - /admin112233/, /blogblog/ and /phpmyadmin/
 ![](/img/stapler/nikto2.png)
 
-The /admin112233/ directory redirects me to xss-payloads.com, however blogblog lands me at the WordPress blog that I knew was running somewhere.
+The /admin112233/ directory redirects me to xss-payloads.com, however /blogblog/ lands me at the WordPress blog that I knew was running somewhere.
 ![](/img/stapler/blog.png)
 
 I run wpscan against the WordPress Instance and enumerate all users. From the wpscan I see that /wp-content/ and /wp-includes/ have directory listing enabled. I viewed the installed plugins and saw that advanced-video-embed-embed-videos-or-playlists v1.0 is installed. A little bit of research reveals that this plugin is vulnerable to a [LFI exploit](https://www.exploit-db.com/exploits/39646/). 
