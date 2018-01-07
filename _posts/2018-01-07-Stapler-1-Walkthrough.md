@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Vulnhub - Stapler: 1 Walkthrough
+title: Vulnhub - Stapler 1 Walkthrough
 tags: [Hacking, Vulnhub, CTF]
 ---
 
