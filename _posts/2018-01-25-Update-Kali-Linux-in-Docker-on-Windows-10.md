@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Update: Kali Linux in Docker on Windows 10
+title: Update - Kali Linux in Docker on Windows 10
 tags: [Kali, Security]
 ---
 Since my original post on running [Kali Linux in Docker on Windows 10](https://wjmccann.github.io/blog/2017/12/03/Kali-Linux-in-Docker-on-Windows-10) I have been able to robustly test and refine this set up. I have used this setup to undertake challenges on Hack the Box and Vulnhub, but perhaps what gave these setup a real test was using it on real penetration testing engagements. This post is designed to complement the original to demonstrate the improvements I have made.
