@@ -10,7 +10,9 @@ The Australian Defence Organisation is a secured organisation (as you would expe
 
 History proves this to be true. The [Australian Cyber Security Centre 2017 Threat Report](https://www.acsc.gov.au/publications/ACSC_Threat_Report_2017.pdf) highlights the threats to out-sourcing and the supply chain where adversaries will target third party organisations with weaker security as their main target has a greater level of security. The ACSC Report also details of an attack on a Defence contractor in 2016 in which [restricted technical information](http://www.zdnet.com/article/secret-f-35-p-8-c-130-data-stolen-in-australian-defence-contractor-hack/) on the F-35 Joint Strike Fighter, P-8 Poseidon, C-130, Joint Direct Attack Munition (JDAM) and 'a few naval vessels' was stolen by an APT that has now become known as 'Alf'. The report detailed the business as 'A small Australian company with contracting links to national security projects' and that the attacker has sustained to the network for an extended period of time. 
 
-![](http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/65/654745850a89633359b2bd909eb17d9204443aa4_full.jpg)
+<p align="center">
+  <img src="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/65/654745850a89633359b2bd909eb17d9204443aa4_full.jpg">
+</p>
 
 Another Australian company - [Codan](http://codan.com.au/) specialise in the development of radio equipment and metal detectors tailored for the Defence market. However, in 2013 the company detailed how they were attacked in a [4 Corners](http://www.abc.net.au/4corners/hacked/4717206) episode how they were compromised via a [Chinese attacker known as APT 3](http://www.smh.com.au/business/codan-fights-back-after-chinese-hackers-stole-metal-detector-designs-20150624-ghx36t). In this attack the intent was to steal Intellectual Property in the form of schematics and diagrams for Codan's metal detectors. The attacks stole the plans and commenced producing a cheaper version of the product which resulted in a loss of revenue for Codan. 
 
