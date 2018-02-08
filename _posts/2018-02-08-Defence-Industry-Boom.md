@@ -6,7 +6,7 @@ tags: [Security]
 The Australian Government has recently announced that they will [establish a $3.8 billion fund](https://www.sbs.com.au/news/defence-exports-turnbull-unveils-3-8b-fund-to-boost-foreign-sales-of-australian-arms) in order to grow Australia's defence export industry. The intent of the push for Defence Industry is in part, part of the Government's overall Innovation push and ideally this should see Australian business continue to innovate and expand within the Defence industry. This will lead to greater exposure internationally of Australian businesses. This sounds great for Australian business, however as history demonstrates this presents some risks and if you're in Cyber Security this sounds great (or bad, depending on your perspective).
 
 <p align="center">
-  [![](https://www.youtube.com/watch?v=iozafJx9244/0.jpg)](https://www.youtube.com/watch?v=iozafJx9244)
+  [![Defence Industry Commercial](https://www.youtube.com/watch?v=iozafJx9244/0.jpg)](https://www.youtube.com/watch?v=iozafJx9244)
 </p>
 
 ## The History
