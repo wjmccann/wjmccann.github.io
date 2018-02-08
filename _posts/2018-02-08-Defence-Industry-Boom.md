@@ -5,10 +5,7 @@ tags: [Security]
 ---
 The Australian Government has recently announced that they will [establish a $3.8 billion fund](https://www.sbs.com.au/news/defence-exports-turnbull-unveils-3-8b-fund-to-boost-foreign-sales-of-australian-arms) in order to grow Australia's defence export industry. The intent of the push for Defence Industry is in part, part of the Government's overall Innovation push and ideally this should see Australian business continue to innovate and expand within the Defence industry. This will lead to greater exposure internationally of Australian businesses. This sounds great for Australian business, however as history demonstrates this presents some risks and if you're in Cyber Security this sounds great (or bad, depending on your perspective).
 
-<p align="center">
-  [![Hak5 Keynote AUSCERT 2017](http://img.youtube.com/vi/m-hhNJLVLEE/0.jpg)](http://www.youtube.com/watch?v=m-hhNJLVLEE)
   [![Defence Industry Commercial](https://www.youtube.com/watch?v=iozafJx9244/0.jpg)](https://www.youtube.com/watch?v=iozafJx9244)
-</p>
 
 ## The History
 The Australian Defence Organisation is a secured organisation (as you would expect), however with increased reliance on contractors and outside support this has resulted in a reduced security footprint. These typically smaller Australian businesses that may contract to the larger defence orientated companies present the most risk in a Cyber sense. This is specific to the Defence industry as well, it makes sense, the larger companies have the most to lose, but they also have greater means to spend on security. The smaller you get the more likely you are to have a business with the lone IT worker trying to keep the lights on who isnt that concerned with security. 
