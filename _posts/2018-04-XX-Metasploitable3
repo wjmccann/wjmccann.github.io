@@ -1,0 +1,23 @@
+---
+layout: post
+title: Metasploitable 3 and Flags
+tags: [CTF, Security]
+---
+I have recently completed [With You With Me](https://www.withyouwithme.com.au/)'s Penetration Testing course. In that course, they utilised Metasploitable 2 as the basis to conduct training. As you will see from my Blog, I have completed quite a few Vulnhub VM's and am comfortable with exploiting a Linux System and Metasploitable 2 is now quite old. As a result of this I have been wanting to further development my Windows exploitation skills and although I have been completing all Windows boxes on [Hack the Box](https://www.hackthebox.eu/), I wanted something I can do when I don't have an internet connection - Enter Metasploitable 3. 
+
+Metasploitable 3 is the last VM from Rapid 7 and is based on Windows Server 2008. What makes Metasploitable 3 far more interesting than Metasploitable 2 is the inclusion of flags to capture. This blog post will cover how I was able to build Metasploitable 3, a few techniques on exploiting the machine (without using Metasploit!) and how to obtain the hidden flags. 
+
+## Installation
+I originally, did not want to cover installation as there are numerous posts floating around the internet covering it. However, I ran into a few issues along the way and hopefully what I learnt to assist others. Unlike Metasploitable 2, Metasploitable 3 must be built utilisng Packer and Vagrant and a provider of your choice (Virtual Box or VMWare). The requirements for Metasploitable 3 are listed on the [github repository](https://github.com/rapid7/metasploitable3). 
+
+Inside a Ubuntu VM, I utilised Packer v1.0.0 and Vagrant 1.9.1 with Virtuable Box 5.2.8. Utilising the bash script in the Git repository I was able to successfully build Metasploitable 3. However, this was built for VirtualBox and exporting the VM to VMware did not work. I therefore needed to build it for VMWare as that is what I use day to day. I was unable to build for VMWare inside my Ubuntu VM. I was however able to successfully build the .box file utilising [packer v1.2.2](https://releases.hashicorp.com/packer/1.2.2/packer_1.2.2_windows_amd64.zip) and my installation of VMWare Workstation 14. I was unable to use Vagrant successfully as I also needed VMWare Fusion (which I do not have). However, with Packer v1.2.2 I was able to create a .box file with everything inside. I simply unzipped the .box file a few times to get the VMWare files and then imported that into VMWare Workstation.
+
+## Explioitation
+Now, being called Metasploitable the idea is to use Metasploit to exploit the box. This seems a bit too easy for my liking, so I will cover a few techniques I used to exploit the machine without using Metasploit.
+
+
+
+## Flags
+There are a total of 15 flags hidden inside of Metasploitable 3. Back in 2016 Rapid 7 held a [Capture the Flag]() competition, however we have missed the boat so we are doing this for our own fun! The flags are based on a deck of cards and they are not just simply files sitting on the machine. The flags are obscured and hidden inside of files and some additional techniques are required to obtain the flags.
+
+### 
