@@ -112,4 +112,48 @@ We are now NT Authority\System and lets get hunting for flags!
 ## Flags
 There are a total of 15 flags hidden inside of Metasploitable 3. Back in 2016 Rapid 7 held a [Capture the Flag]() competition, however we have missed the boat so we are doing this for our own fun! The flags are based on a deck of cards and they are not just simply files sitting on the machine. The flags are obscured and hidden inside of files and some additional techniques are required to obtain the flags.
 
-### 
+### Jack of Clubs
+Once you have System, simply navigate to C:\Windows\System32 and the .png file is sitting right there for you. 
+
+### King of Diamonds
+The King of Diamonds can be found two ways - By navigating with your browser to http://192.168.206.135:8585/wordpress/wp-content/uploads/2016/09/ and downloading the file. This is all because the WordPress uploads directory has directory listing available. Or, if you have a shell - navigate to C:\wamp\www\wordpress\wp-content\uploads\2016\09 and transfer the file.
+
+### Jack of Hearts
+The Jack of Hearts is found in C:\Users\Public\Documents. The file is a .docx file. Simply unzip the file and navigate to the unzip word/media directory to get the .png file.
+
+### Seven of Spades
+The Seven of Spades is located at C:\Users\Public\Documents. It is a .pdf file. To extract the flag you need to use pdfimages.
+{% highlight bash %}
+pdfimages -png seven_of_spades.pdf ~/Metasploitable-Flags/
+{% endhighlight %}
+
+### Ace of Hearts
+The Ace of Hearts is found at C:\Users\Public\Pictures. It is a .jpg, however all the other flags are .png and also the .jpg flag doesn't look like the rest. Using binwalk on the file, you will notice that there is a zip file hidden inside. I copied the file and added a .zip extension and then simply unzipped the file to reveal the flag.
+
+### Jack of Diamonds
+The Jack of Diamonds is found at C:\. When you inspect the file, you will notice that it is a 0 byte file. The flag is hidden inside an alternate data stream. In order to view the alternate data stream use the following:
+{% highlight bash %}
+powershell -c get-content -Path C:\jack_of_diamonds.png -Stream jack_of_diamonds.txt
+{% endhighlight %}
+You will notice that it looks like base64. Pipe the alternate data stream into another file and then transfer that to your attacking machine. I added the extra '==' to the end of the Base64 string and then decoded it into a png to reveal the flag.
+{% highlight bash %}
+cat jack_of_diamonds.b64 | base64 --decode > jack_of_diamonds.png
+{% endhighlight %}
+
+### Four of Clubs
+The Four of Clubs is found in C:\Users\Public\Music. The file is a .wav, however using binwalk on the file reveals it to have a .png hidden inside. To extract the .png I simply used a tool called [foremost](https://wiki.archlinux.org/index.php/Foremost) to extract the image.
+
+### Ten of Diamonds
+The Ten of Diamonds is found in C:\Users\Public\Pictures. The file a .png file, however it cannot be viewed. Looking at the file with binwalk we can see the compressed component of the image, however there is no PNG header. Opening the file in hexeditor I can see that the letters PNG have been replaced with MSF. I change these bytes to '50 4e 47' which provides me with the PNG header. I save the file and view the flag.
+
+### Queen of Hearts
+The Queen of Hearts flag is found by browsing the MySQL installation on port 3306. Using the username 'root' and no passowrd I was able to navigate through to find the database 'cards' and the table 'queen_of_hearts'. The first entry in the table contacts base64 encoded text. I copied this to my attacking machine and decoded. However, there must be something wrong with the base64 string as the flag appears to be broken.
+
+### Three of Spades.
+The Three of Spades is found in C:\Windows and is a .png file. However the file does not display. Further Work is needed to decode this flag. To Be Completed.
+
+### King of Clubs
+The King of Clubs is found in C:\Windows\System32 and is a windows PE executable. This flag requires binary analysis to be conducted in order to decode the flag. To Be Completed.
+
+## Conclusion....for now.
+After much searching, I was struggling to find any more flags. After a bit of googling, it appears my advice earlier to ignore using vagrant is the issue. The Vagrant component of the build will complete the installation and include other services such as an IIS server and FTP and more flags! For now, this will do. This blog post is long enough - Look out for a part 2 once I get my Metasploitable build fixed!
