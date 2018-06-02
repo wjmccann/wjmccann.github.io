@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Exploiting Durpalgeddon 2 on Windows
+title: Exploiting Drupalgeddon 2 on Windows
 tags: [Security, Hacking]
 ---
 In late March of this year the Drupalgeddon 2 vulnerability was disclosed. Given the CVE 2018-7600 the vulnerability was an unauthenticated remote code execution flaw in Drupal instances covering versions < 7.58 / 8.x < 8.3.9 / 8.4.x < 8.4.6 / 8.5.x < 8.5.1. So basically every Drupal instance at the time and with around a million websites online running Drupal this flaw is huge. 
