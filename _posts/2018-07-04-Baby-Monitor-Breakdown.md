@@ -98,11 +98,11 @@ From the scan we can see that it refers to a CK-0145.gateway host. I add this wi
 ## Web Server
 The presence of a Web Server for the device was not advertised when I purchased the device or whilst looking through the intruction manual. I attempted some basic credentials, I finally get access using the username 'admin' and the password I set for the device whilst setting it up with the CamKeeper app. Note, this is a different password from the account that I registered. This appears to be more of a device password than anything else.
 
-![](/img/bm2/web.png)
+![](/img/bm2/web.PNG)
 
 Inside the web application I have access to settings to change the device password, change the WiFi/Network settings and perform updates on the device. I played around with the update feature and it appears to allow you to upload any file you want to the device. Once uploaded the web application will tell you that the firmware was installed and that the device was rebooting. No matter what kind of file I uploaded the same would occur, I was actually suprised I didn't brick the device doing this. Nevertheless, I was unable to get a foothold on the device as the device would always reboot and there was no way to access an uploaded file once it was 'uploaded'. 
 
-![](/img/bm2/web2.png)
+![](/img/bm2/web2.PNG)
 
 ## RTSP
 The first thing I did when looking at the RTSP stream data is to try accessing it via VLC Media Player. This time it worked, meaning the device has an unauthenticated RTSP stream. What this means is that anyone on the network with the device can access the video feed without the need to enter any credentials. This could be handy or some people, but it also means that a malicious actor can view your feed if they have compromised your home network. 
@@ -114,18 +114,18 @@ I was hoping to be able to observe how the device generates alerts in the hope o
 
 After getting traffic passed through Wireshark I could see how the device was communicating. Whilst the CamKeeper application was open on my phone the Camera communicated directly to my phone's IP via UDP. It was when I closed the CamKeeper App on the phone or the Camera could not ping my phone that things started to get interesting. The Camera would start communicating out to a bunch of different (well... shady chinese) IP addresses. 
 
-![](/img/bm2/packet.png)
+![](/img/bm2/packet.PNG)
 
 I further tested this with alerts. Whilst the camera could ping my phone, when an alert was triggered it would commence sending UDP packets to the phone's IP address. Once it couldn't ping the phone it would send a sequence of TCP packets to port 8083 on a chinese owned server. It is assessed that this server is actually where I registered an account, as once the TCP packets are sent to that server, I receive the notication on my phone regardless if I am on the same network as the camera. Now, for a young family when they discover that their camera can alert them to things when they are outside the range of their camera they may be pleased with the feature. However, there is no where in the advertisement or the instructions that informs you that this device pings out to the internet. 
 
-![](/img/bm2/alert.png)
+![](/img/bm2/alert-tcp.png)
 
 Further, when you are outside your WiFi network and you recieve an alert, if you click on the 'view camera' option one of these shady servers will start communicating with the Camera in order to pull images and sound from the camera (only if they were recorded). I was hoping that the majority of the communication between the device and these servers would be via API calls however it is all done via TCP or UDP packet streams. This makes it more difficult to record and replay. 
 
 ## Issues
 The first significant issue I indentified with this particular Baby Monitor is the default unauthenticated RTSP stream. In order to determine how significant of an issue this is, I turned to [Shodan](https://www.shodan.io/) to see what devices like this are out there. Using the unqiue web server 'luozewen-Webs' as a search string I was able to identify 33 IP Cameras. Of these Cameras that have port 554 exposed all of them had unauthenticated RTSP streams. 
 
-![](/img/bm2/cam-store.png)
+![](/img/bm2/cam-store.PNG)
 
 The automatic connection to the outside world servers by the Camera is not a significant security issue, however it is difficult to know what these servers are and what data they are storing. The issue is that the device does that anyway without informing the user. As the product is marketted as a Baby Monitor, security is a concern to the user. If the device is going to send data over the internet the user should be informed of this fact when making the decision to purchase the camera. 
 
