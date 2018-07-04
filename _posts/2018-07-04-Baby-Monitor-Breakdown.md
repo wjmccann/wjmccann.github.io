@@ -125,8 +125,6 @@ Further, when you are outside your WiFi network and you recieve an alert, if you
 ## Issues
 The first significant issue I indentified with this particular Baby Monitor is the default unauthenticated RTSP stream. In order to determine how significant of an issue this is, I turned to [Shodan](https://www.shodan.io/) to see what devices like this are out there. Using the unqiue web server 'luozewen-Webs' as a search string I was able to identify 33 IP Cameras. Of these Cameras that have port 554 exposed all of them had unauthenticated RTSP streams. 
 
-![](/img/bm2/cam-store.PNG)
-
 The automatic connection to the outside world servers by the Camera is not a significant security issue, however it is difficult to know what these servers are and what data they are storing. The issue is that the device does that anyway without informing the user. As the product is marketted as a Baby Monitor, security is a concern to the user. If the device is going to send data over the internet the user should be informed of this fact when making the decision to purchase the camera. 
 
 ## Conclusion
