@@ -4,7 +4,7 @@ title: About me
 subtitle: "All this computer hacking is making me thirsty"
 ---
 
-I'm William McCann, Cyber Security Ethusiast, Computer Scientist and jack of all trades geek. I dabble in just about everything I can when it comes to IT, but my main passion is Information and Cyber Security. 
+I'm William McCann, a Cyber Security Consultant, Penetration tester and jack of all trades geek. I dabble in just about everything I can when it comes to IT, but my main passion is Information and Cyber Security. 
 
 Browse my Github and you will see I have programmed in:
 
