@@ -1,0 +1,11 @@
+---
+layout: post
+title: Vulnhub - Lampaio Walkthrough
+tags: [Hacking, Vulnhub, CTF]
+---
+Lampaio is a Boot to Root CTF available [here](https://www.vulnhub.com/entry/lampiao-1,249/) on Vulnhub. It's difficulty is rated as Easy.
+
+To begin with, I kicked off searching for the VM on my network using netdiscover. I found that the VM had the IP 192.168.206.136.
+![](/img/lampaio/netdiscover.png)
+
+
