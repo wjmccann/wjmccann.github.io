@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Vulnhub - Lampaio Walkthrough
+title: Vulnhub - Lampiao Walkthrough
 tags: [Hacking, Vulnhub, CTF]
 ---
 Lampaio is a Boot to Root CTF available [here](https://www.vulnhub.com/entry/lampiao-1,249/) on Vulnhub. It's difficulty is rated as Easy.
