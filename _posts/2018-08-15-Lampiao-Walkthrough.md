@@ -24,7 +24,7 @@ This time I have some more success and find that there is port 1898 open. I then
 # Drupalgeddon 2
 I browse to the site and it looks like a Drupal Blog. I check the robots.txt and it shows all the familiar entries of a Drupal site. I view the change log and confirm that this instance is version 7.54. This means there is a high chance that this will be vulnerable to the Drupalgeddon2 exploit. You can see a blog post I made about this exploit and running it against a Windows installation [here](https://wjmccann.github.io/blog/2018/06/02/Drupalgeddon2).
 ![](/img/lampaio/drupal.PNG)
-![](/img/lampaio/changelog.PNG)
+![](/img/lampaio/changelog.png)
 
 I then fire up metasploit and load exploit/unix/webapp/drupal_drupalgeddon2. Set my RHOST and RPORT and I successfully get a shell!
 ![](/img/lampaio/shell.png)
