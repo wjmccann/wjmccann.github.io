@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Raven - A Vulnerable VM
+title: Gittysburg - A Vulnerable VM
 tags: [Hacking, Vulnhub, CTF]
 ---
 I seem to have caught a bug. Its been wonderful seeing the positive response to my first two vulnerable VM's Raven and Raven2 that I wanted to give it another shot. This one is a bit different and I hope will provide a unique challenge to those that attempt it. I'd like to say this is a beginner/intermediate level VM, but i am leaning more towards the intermediate side. 
@@ -11,4 +11,4 @@ Once again, I have submitted this to Vulnhub and hopefully it features there soo
 
 I love seeing people complete my VM's on twitter and I absolutely love reading walkthroughs, so if you complete it or write one up - please let me know! 
 
-![](/img/gittysburg.png)
+![](/img/gittysburg.PNG)
