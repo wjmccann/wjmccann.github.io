@@ -60,3 +60,10 @@ The subject matter of this blog post is emotional, if it has had an impact on yo
 * [Open Arms](https://www.openarms.gov.au/) (current and ex-serving Australian Defence Force personnel and their families can seek this free and confidential support) – 1800 011 046
 * ADF Mental Health All-hours Support Line (for current serving Australian Defence Force personnel and their families) on 1800 628 036.
 * [Beyond Blue](https://www.beyondblue.org.au/)
+
+---
+This blog post is part of a series addressing the debat around a Royal Commission into Veteran Suicide, you can view the other posts here:
+*	[Part 1: Understanding the problem]((https://wjmccann.github.io/blog/2021/03/30/Veteran-Suicide-Part-2))
+*	[Part 2: The National Commissioner for Defence and Veteran Suicide Prevention](https://wjmccann.github.io/blog/2021/03/30/Veteran-Suicide-Part-2)
+*	Part 3: The Constant Battle Inquiry
+*	Part 4: My Personal Story and why this matters
