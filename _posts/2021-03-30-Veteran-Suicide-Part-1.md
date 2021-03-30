@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Enemy on the Homefront - Veteran Suicide Discussion - Part 1
+title: Enemy on the Homefront - Part 1 - Veteran Suicide Discussion
 tags: [Other]
 ---
 This post will be different from my previous ones, in fact you may notice I haven’t posted since 2018 and this in part will detail why. For those that do not know, this blog has mostly been focused on Cyber Security and the research I have put into that field. For those who have looked at my LinkedIn you will have seen that I have served in the Australian Army, I medically discharged in 2019 after 13 years of service due to mental health conditions. This blog post attempts to breakdown the current debate about calls for a Royal Commission in to Veteran Suicide. This topic is emotional, the debate is passionate and for those who have been touched by it the feelings will always be raw. Yet, there is still inaction on the topic by our Government. [Despite passing a unanimous motion in parliament for the government to call a Royal Commission](https://www.abc.net.au/news/2021-03-22/parliament-backs-royal-commission-for-veteran-suicides/100021274), at the time of writing this nothing has been done.
