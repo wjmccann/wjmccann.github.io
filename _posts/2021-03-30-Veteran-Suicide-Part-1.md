@@ -24,8 +24,8 @@ Those calling for a Royal Commission believe that this is their best means to ge
 The key thing is everyone knows what the issue is and I want to make this clear – all sides of the debate want the same outcome, to understand why veteran suicides rates have increased and to help prevent occurrences of veteran suicide. At the end of the day the argument is about how do we best achieve that goal. 
 
 This blog post is will be in a number of parts to make it easier to read: 
--	Part 1: Understanding the problem
--	Part 2: The National Commissioner for Defence and Veteran Suicide Prevention
+-	[Part 1: Understanding the problem]((https://wjmccann.github.io/blog/2021/03/30/Veteran-Suicide-Part-2))
+-	[Part 2: The National Commissioner for Defence and Veteran Suicide Prevention](https://wjmccann.github.io/blog/2021/03/30/Veteran-Suicide-Part-2)
 -	Part 3: The Constant Battle Inquiry
 -	Part 4: My Personal Story and why this matters
 
